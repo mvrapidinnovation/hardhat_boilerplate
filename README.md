@@ -1,4 +1,4 @@
-# Advanced Sample Hardhat Project
+# Solidity Boilerplate
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
 
@@ -24,6 +24,17 @@ npx prettier '**/*.{json,sol,md}' --write
 npx solhint 'contracts/**/*.sol'
 npx solhint 'contracts/**/*.sol' --fix
 ```
+
+
+## Project Structure
+
+```
+ |--contracts\      # All the smart contracts
+ |--script\         # All the custom scripts for e.g writing deployment scripts
+ |--shared\         # All the common function libraries etc
+ |--test\           # All test cases
+```
+
 
 # Contract verification
 
