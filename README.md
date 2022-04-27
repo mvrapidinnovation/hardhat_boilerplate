@@ -41,11 +41,11 @@ Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_
 npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
 ```
 
-In the shared/inputs folder you can put the files containing the inputs required for the deployment of the contracts.
+- In the _shared/inputs_ folder you can put the files containing the inputs required for the deployment of the contracts.
 
-In the shared/arguments folder you can put the files containing the arguments required for the verification of those contracts.
+- In the _shared/arguments_ folder you can put the files containing the arguments required for the verification of those contracts.
 
-To verify the contract using the arguments in the shared/arguments folder you can use this:
+- To verify the contract using the arguments in the shared/arguments folder you can use this:
 
 ```shell
 hh verify --constructor-args "path/to/arguments/file" --network <NETWORK> "<CONTRACT_ADDRESS>"
