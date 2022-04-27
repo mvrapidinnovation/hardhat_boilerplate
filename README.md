@@ -25,16 +25,17 @@ npx solhint 'contracts/**/*.sol'
 npx solhint 'contracts/**/*.sol' --fix
 ```
 
-
 ## Project Structure
 
 ```
  |--contracts\      # All the smart contracts
+    |--shared       # All the common function libraries etc
  |--script\         # All the custom scripts for e.g writing deployment scripts
- |--shared\         # All the common function libraries etc
+ |--shared\         # All the contract's constructor parameters
+    |--inputs\      # It stores the files that contains values for constructor parameters to be given at the time of deployment.
+    |--arguments\   # It stores the files that contains values for constructor parameter to be given at the time of verification (check verification section below)
  |--test\           # All test cases
 ```
-
 
 # Contract verification
 
